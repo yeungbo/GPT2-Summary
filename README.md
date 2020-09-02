@@ -1,5 +1,21 @@
 # GPT2 for Chinese Summary
 
+## Prerequisites:
+针对 docker image: pytorch/pytorch:1.1.0-cuda10.0-cudnn7.5-devel
+ pip install sentencepiece
+ pip install regex
+ pip install sacremoses
+ pip install tensorboard
+ pip install past (如果失败执行 pip install future )
+ pip install sklearn
+ pip install flask
+
+支持中文：
+export LC_ALL="en_US.utf8"
+dpkg-reconfigure locales （选择149-en_US.UTF-8安装）
+locale-gen
+export LC_ALL="en_US.utf8"
+echo $LC_ALL
 
 ## 项目描述
 - 本项目使用 GPT2-Chinese 的模型将wiki中文的数据导入模型训练了通用模型。
